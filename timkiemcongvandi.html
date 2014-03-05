@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Quản lý công văn</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/justified-nav.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top navbar-nav" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand " href="#">Quản lý công văn</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Trang chủ</a></li>
+            
+            <li >
+              <a href="#">
+                <span class="badge pull-right">42</span>
+                Messages
+              </a>
+            </li>
+    
+          </ul>
+         
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Nhập công văn cần tìm" >
+          </form>
+            </li>
+            <li>
+               <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+            </li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="masthead">
+        <ul class="nav nav-justified">
+          <li class="active"><a href="#">Trang chủ</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Công văn đến <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Cập nhật</a></li>
+                <li><a href="#">Xử lý</a></li>
+                <li><a href="#">Tìm kiếm</a></li>
+              </ul>
+            </li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Công văn đi <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Cập nhật</a></li>
+                <li><a href="#">Xử lý</a></li>
+                <li><a href="#">Tìm kiếm</a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Thống kê <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Theo loại văn bản</a></li>
+                <li><a href="#">Theo thời gian</a></li>
+                <li><a href="#">Theo nơi gửi</a></li>
+                <li><a href="#">Theo nơi nhận</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Công việc <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Xử lý công văn</a></li>
+              </ul>
+            </li>
+            <li ><a href="#">Tài khoản</a></li>
+            <li ><a href="#">Hướng dẫn</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <p class="text-center h1" ><strong>Tìm kiếm công văn đi</strong></p>
+        <br>
+
+        <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                     <label class="control-lable col-sm-3 text-info" ><p font-size="16px"><strong>Số ký hiệu văn bản</strong></p></label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control input-lg" placehoder="Text input">
+                      </div>
+                </div> 
+
+                <div class="form-group">
+                      <label class="control-lable col-sm-3 text-info" ><p font-size="16px"><strong>Tác giả văn bản</strong></p></label>
+                      <div class="col-sm-6">
+                      <input type="text" class="form-control input-lg" placehoder="Text input">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                
+                       <label class="control-lable col-sm-3 text-info" ><p font-size="16px"><strong>Ngày đi</strong></p></label>
+                      <div class="col-sm-3">
+                      <input type="date" class="form-control input-lg" placehoder="Text input">
+                    </div>
+
+                      <label class="control-lable col-sm-3 text-info" ><p font-size="16px"><strong>Ngày ban hành</strong></p></label>
+                      <div class="col-sm-3">
+                      <input type="date" class="form-control input-lg" placehoder="Text input">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                     <label class="control-lable col-sm-3 text-info" text-size="21"><p><strong>Hiệu lực</strong></p></label>
+                    <div class="col-sm-3">
+                      <input type="date" class="form-control input-lg " placehoder="Text input">
+                    </div>
+                             
+                     <label class="control-lable col-sm-3 text-info" ><p><strong>Kết thúc</strong></p></label>
+                    <div class="col-sm-3">
+                      <input type="date" class="form-control input-lg" placehoder="Text input">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                   <label class="control-lable col-sm-3 text-info" ><p font-size="16px"><strong>Loại văn bản</strong></p></label>
+                  <div class="col-sm-3">
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                
+                   <label class="control-lable col-sm-3 text-info" ><p font-size="16px"><strong>Lĩnh vực</strong></p></label>
+                  <div class="col-sm-3">
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>   
+                   
+                <div class="form-group">
+                      <label class="control-lable col-sm-3 text-info" ><p font-size="16px"><strong>Trích yếu</strong></p></label>
+                      <div class="col-sm-9">
+                      <textarea class="form-control input-lg" rows="3"></textarea>
+                                            <label class=" text-info" >Trính yếu từ ảnh</label>
+                      </div>
+                </div>
+
+               
+          
+                <div class="form-group">
+                      <label class="control-lable col-sm-3 text-info" ><p font-size="16px"><strong>Số vào sổ theo dõi</strong></p></label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control input-lg" placehoder="Text input">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                   <label class="control-lable col-sm-3 text-info" ><p font-size="16px"><strong>Nơi nhận</strong></p></label>
+                  <div class="col-sm-3">
+                    <select multiple class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div> 
+                
+                
+            <div class="form-group">    
+              <p class="col-sm-3"></p>
+              <a href="#" class="btn btn-primary btn-lg col-sm-2" role="button">Tìm</a>
+              <p class="col-sm-1"></p>
+             </div> 
+        </form>
+      </div>
+
+
+      <footer>
+        <hr>
+         <div class="footer text-right">
+                    <p>&copy; copyrights Đại học cần thơ 2014</p>
+                </div>
+
+      </footer> 
+
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+  </body>
+</html>
